@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  devise_for :models
   get 'user_tweet/show'
 
   get 'user_tweet/update'
